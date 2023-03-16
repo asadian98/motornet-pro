@@ -1,2 +1,2 @@
 # motornet-pro
-Distributional Model-based RL for reach control of the MotorNet planar arm
+MotorNet-Probabilistic: Stochastic Model-based RL for Reach Control of a Realistic Arm

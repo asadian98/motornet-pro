@@ -1,0 +1,925 @@
+@article{MotorNet,
+  author       = {Olivier Codol and Jonathan A. Michaels and Mehrdad Kashefi and J. Andrew Pruszyski and Paul L. Gribble},
+  title        = {MotorNet: a Python toolbox for controlling differentiable biomechanical effectors with artificial neural networks},
+  elocation-id = {2023.02.17.528969},
+  year         = {2023},
+  doi          = {10.1101/2023.02.17.528969},
+  publisher    = {Cold Spring Harbor Laboratory},
+  abstract     = {Artificial neural networks (ANNs) are a powerful class of computational models for unravelling neural mechanisms of brain function. However, for neural control of movement, they currently must be integrated with software simulating biomechanical effectors, leading to limiting impracticalities: (1) researchers must rely on two different platforms and (2) biomechanical effectors are not generally differentiable, constraining researchers to reinforcement learning algorithms despite the existence and potential biological relevance of faster training methods. To address these limitations, we developed MotorNet, an open-source Python toolbox for creating arbitrarily complex, differentiable, and biomechanically realistic effectors that can be trained on user-defined motor tasks using ANNs. MotorNet is designed to meet several goals: ease of installation, ease of use, a high-level user-friendly API, and a modular architecture to allow for flexibility in model building. MotorNet requires no dependencies outside Python, making it easy to get started with. For instance, it allows training ANNs on typically used motor control models such as a two joint, six muscle, planar arm within minutes on a typical desktop computer. MotorNet is built on TensorFlow and therefore can implement any network architecture that is possible using the TensorFlow framework. Consequently, it will immediately benefit from advances in artificial intelligence through TensorFlow updates. Finally, it is open source, enabling users to create and share their own improvements, such as new effector and network architectures or custom task designs. MotorNet{\textquoteright}s focus on higher order model and task design will alleviate overhead cost to initiate computational projects for new researchers by providing a standalone, ready-to-go framework, and speed up efforts of established computational teams by enabling a focus on concepts and ideas over implementation.Competing Interest StatementThe authors have declared no competing interest.},
+  url          = {https://www.biorxiv.org/content/early/2023/02/19/2023.02.17.528969},
+  eprint       = {https://www.biorxiv.org/content/early/2023/02/19/2023.02.17.528969.full.pdf},
+  journal      = {bioRxiv}
+}
+
+@article{CrevecoeurRobustControl,
+  title    = {Robust Control in Human Reaching Movements: A Model-Free Strategy to Compensate for Unpredictable Disturbances},
+  author   = {Crevecoeur, Fr{\'e}d{\'e}ric and Scott, Stephen H and Cluff,
+              Tyler},
+  abstract = {Current models of motor learning suggest that multiple timescales
+              support adaptation to changes in visual or mechanical properties
+              of the environment. These models capture patterns of learning and
+              memory across a broad range of tasks, yet do not consider the
+              possibility that rapid changes in behavior may occur without
+              adaptation. Such changes in behavior may be desirable when facing
+              transient disturbances, or when unpredictable changes in visual
+              or mechanical properties of the task make it difficult to form an
+              accurate model of the perturbation. Whether humans can modulate
+              control strategies without an accurate model of the perturbation
+              remains unknown. Here we frame this question in the context of
+              robust control (H $\infty$-control), a control strategy that
+              specifically considers unpredictable disturbances by increasing
+              initial movement speed and feedback gains. Correspondingly, we
+              demonstrate in two human reaching experiments including males and
+              females that the occurrence of a single unpredictable disturbance
+              led to an increase in movement speed and in the gain of rapid
+              feedback responses to mechanical disturbances on subsequent
+              movements. This strategy reduced perturbation-related motion
+              regardless of the direction of the perturbation. Furthermore, we
+              found that changes in the control strategy were associated with
+              co-contraction, which amplified the gain of muscle responses to
+              both lengthening and shortening perturbations. These results have
+              important implications for studies on motor adaptation because
+              they highlight that trial-by-trial changes in limb motion also
+              reflected changes in control strategies dissociable from
+              error-based adaptation.SIGNIFICANCE STATEMENT Humans and animals
+              use internal representations of movement dynamics to anticipate
+              the impact of predictable disturbances. However, we are often
+              confronted with transient or unpredictable disturbances, and it
+              remains unknown whether and how the nervous system handles these
+              disturbances over fast time scales. Here we hypothesized that
+              humans can modulate their control strategy to make reaching
+              movements less sensitive to perturbations. We tested this
+              hypothesis in the framework of robust control, and found changes
+              in movement speed and feedback gains consistent with the model
+              predictions. These changes impacted participants' behavior on a
+              trial-by-trial basis. We conclude that compensation for
+              disturbances over fast time scales involves a robust control
+              strategy, which potentially plays a key role in motor planning
+              and execution.},
+  journal  = {J. Neurosci.},
+  volume   = 39,
+  number   = 41,
+  pages    = {8135--8148},
+  month    = oct,
+  year     = 2019,
+  keywords = {motor adaptation; optimal feedback control; reaching control;
+              robust control},
+  language = {en}
+}
+
+@article{Conditt1997,
+  title    = {The motor system does not learn the dynamics of the arm by rote memorization of past experience},
+  author   = {Conditt, M A and Gandolfo, F and Mussa-Ivaldi, F A},
+  abstract = {The purpose of this study was to investigate the learning
+              mechanisms underlying motor adaptation of arm movements to
+              externally applied perturbing forces. We considered two
+              alternative hypotheses. According to one, adaptation occurs
+              through the learning of a mapping between the states (positions
+              and velocities) visited by the arm and the forces experienced at
+              those states. The alternative hypothesis is that adaptation
+              occurs through the memorization of the temporal sequence of
+              forces experienced along specific trajectories. The first
+              mechanism corresponds to developing a model of the dynamics of
+              the environment, whereas the second is a form of ``rote
+              learning.'' Both types of learning would lead to the recovery of
+              the unperturbed performance. We have tested these hypotheses by
+              examining how adaptation is transferred across different types of
+              movements. Our results indicate that 1) adaptation to an
+              externally applied force field occurs with different classes of
+              movements including but not limited to reaching movements and 2)
+              adaptation generalizes across different movements that visit the
+              same regions of the external field. These findings are not
+              compatible with the hypothesis of rote learning. Instead, they
+              are consistent with the hypothesis that adaptation to changes in
+              movement dynamics is achieved by a module that learns to
+              reproduce the structure of the environmental field as an
+              association between visited states and experienced forces,
+              independent of the kinematics of the movements made during
+              adaptation.},
+  journal  = {J. Neurophysiol.},
+  volume   = 78,
+  number   = 1,
+  pages    = {554--560},
+  month    = jul,
+  year     = 1997,
+  language = {en}
+}
+
+@article{Shadmehr1994,
+  title    = {Adaptive representation of dynamics during learning of a motor task},
+  author   = {Shadmehr, R and Mussa-Ivaldi, F A},
+  abstract = {We investigated how the CNS learns to control movements in
+              different dynamical conditions, and how this learned behavior is
+              represented. In particular, we considered the task of making
+              reaching movements in the presence of externally imposed forces
+              from a mechanical environment. This environment was a force field
+              produced by a robot manipulandum, and the subjects made reaching
+              movements while holding the end-effector of this manipulandum.
+              Since the force field significantly changed the dynamics of the
+              task, subjects' initial movements in the force field were grossly
+              distorted compared to their movements in free space. However,
+              with practice, hand trajectories in the force field converged to
+              a path very similar to that observed in free space. This
+              indicated that for reaching movements, there was a kinematic plan
+              independent of dynamical conditions. The recovery of performance
+              within the changed mechanical environment is motor adaptation. In
+              order to investigate the mechanism underlying this adaptation, we
+              considered the response to the sudden removal of the field after
+              a training phase. The resulting trajectories, named aftereffects,
+              were approximately mirror images of those that were observed when
+              the subjects were initially exposed to the field. This suggested
+              that the motor controller was gradually composing a model of the
+              force field, a model that the nervous system used to predict and
+              compensate for the forces imposed by the environment. In order to
+              explore the structure of the model, we investigated whether
+              adaptation to a force field, as presented in a small region, led
+              to aftereffects in other regions of the workspace. We found that
+              indeed there were aftereffects in workspace regions where no
+              exposure to the field had taken place; that is, there was
+              transfer beyond the boundary of the training data. This
+              observation rules out the hypothesis that the subject's model of
+              the force field was constructed as a narrow association between
+              visited states and experienced forces; that is, adaptation was
+              not via composition of a look-up table. In contrast, subjects
+              modeled the force field by a combination of computational
+              elements whose output was broadly tuned across the motor state
+              space. These elements formed a model that extrapolated to outside
+              the training region in a coordinate system similar to that of the
+              joints and muscles rather than end-point forces. This geometric
+              property suggests that the elements of the adaptive process
+              represent dynamics of a motor task in terms of the intrinsic
+              coordinate system of the sensors and actuators.},
+  journal  = {J. Neurosci.},
+  volume   = 14,
+  number   = {5 Pt 2},
+  pages    = {3208--3224},
+  month    = may,
+  year     = 1994,
+  language = {en}
+}
+
+@inproceedings{SuttonDyna-Q,
+  abstract      = {This paper extends previous work with Dyna, a class of architectures for intelligent systems based on approximating dynamic programming methods. Dyna architectures integrate trial-and-error (reinforcement) learning and execution-time planning into a single process operating alternately on the world and on a learned model of the world. In this paper, I present and show results for two Dyna architectures. The Dyna-PI architecture is based on dynamic programming's policy iteration method and can be related to existing AI ideas such as evaluation functions and universal plans (reactive systems). Using a navigation task, results are shown for a simple Dyna-PI system that simultaneously learns by trial and error, learns a world model, and plans optimal routes using the evolving world model. The Dyna-Q architecture is based on Watkins's Q-learning, a new kind of reinforcement learning. Dyna-Q uses a less familiar set of data structures than does Dyna-PI, but is arguably simpler to implement and use. We show that Dyna-Q architectures are easy to adapt for use in changing environments.},
+  address       = {San Francisco (CA)},
+  author        = {Richard S. Sutton},
+  booktitle     = {Machine Learning Proceedings 1990},
+  date-modified = {2023-04-10 14:24:21 -0400},
+  doi           = {https://doi.org/10.1016/B978-1-55860-141-3.50030-4},
+  editor        = {Bruce Porter and Raymond Mooney},
+  isbn          = {978-1-55860-141-3},
+  pages         = {216-224},
+  publisher     = {Morgan Kaufmann},
+  title         = {Integrated Architectures for Learning, Planning, and Reacting Based on Approximating Dynamic Programming},
+  url           = {https://www.sciencedirect.com/science/article/pii/B9781558601413500304},
+  year          = {1990},
+  bdsk-url-1    = {https://www.sciencedirect.com/science/article/pii/B9781558601413500304},
+  bdsk-url-2    = {https://doi.org/10.1016/B978-1-55860-141-3.50030-4}
+}
+
+@article{PAML,
+  title        = {Policy-Aware Model Learning for Policy Gradient Methods},
+  author       = {Romina Abachi and Mohammad Ghavamzadeh and Amir-massoud Farahmand},
+  year         = {2021},
+  eprint       = {2003.00030},
+  journal      = {arXiv},
+  primaryclass = {cs.AI},
+  doi          = {https://doi.org/10.48550/arXiv.2003.00030}
+}
+
+@article{PETS,
+  title        = {Deep Reinforcement Learning in a Handful of Trials using Probabilistic Dynamics Models},
+  author       = {Chua, Kurtland and Calandra, Roberto and McAllister, Rowan and Levine, Sergey},
+  abstract     = {Model-based reinforcement learning (RL) algorithms can
+                  attain excellent sample efficiency, but often lag behind the
+                  best model-free algorithms in terms of asymptotic
+                  performance. This is especially true with high-capacity
+                  parametric function approximators, such as deep networks. In
+                  this paper, we study how to bridge this gap, by employing
+                  uncertainty-aware dynamics models. We propose a new
+                  algorithm called probabilistic ensembles with trajectory
+                  sampling (PETS) that combines uncertainty-aware deep network
+                  dynamics models with sampling-based uncertainty propagation.
+                  Our comparison to state-of-the-art model-based and
+                  model-free deep RL algorithms shows that our approach
+                  matches the asymptotic performance of model-free algorithms
+                  on several challenging benchmark tasks, while requiring
+                  significantly fewer samples (e.g., 8 and 125 times fewer
+                  samples than Soft Actor Critic and Proximal Policy
+                  Optimization respectively on the half-cheetah task).},
+  month        = may,
+  year         = 2018,
+  journal      = {arXiv},
+  primaryclass = {cs.LG},
+  eprint       = {1805.12114},
+  doi          = {https://doi.org/10.48550/arXiv.1805.12114}
+}
+
+@article{MAAC,
+  title        = {Model-Augmented Actor-Critic: Backpropagating through Paths},
+  author       = {Clavera, Ignasi and Fu, Violet and Abbeel, Pieter},
+  abstract     = {Current model-based reinforcement learning approaches use
+                  the model simply as a learned black-box simulator to augment
+                  the data for policy optimization or value function learning.
+                  In this paper, we show how to make more effective use of the
+                  model by exploiting its differentiability. We construct a
+                  policy optimization algorithm that uses the pathwise
+                  derivative of the learned model and policy across future
+                  timesteps. Instabilities of learning across many timesteps
+                  are prevented by using a terminal value function, learning
+                  the policy in an actor-critic fashion. Furthermore, we
+                  present a derivation on the monotonic improvement of our
+                  objective in terms of the gradient error in the model and
+                  value function. We show that our approach (i) is
+                  consistently more sample efficient than existing
+                  state-of-the-art model-based algorithms, (ii) matches the
+                  asymptotic performance of model-free algorithms, and (iii)
+                  scales to long horizons, a regime where typically past
+                  model-based approaches have struggled.},
+  month        = may,
+  year         = 2020,
+  journal      = {arXiv},
+  primaryclass = {cs.LG},
+  eprint       = {2005.08068},
+  doi          = {https://doi.org/10.48550/arXiv.2005.08068}
+}
+
+@article{PSRL,
+  title        = {Model-based Reinforcement Learning for Continuous Control with Posterior Sampling},
+  author       = {Fan, Ying and Ming, Yifei},
+  abstract     = {Balancing exploration and exploitation is crucial in
+                  reinforcement learning (RL). In this paper, we study
+                  model-based posterior sampling for reinforcement learning
+                  (PSRL) in continuous state-action spaces theoretically and
+                  empirically. First, we show the first regret bound of PSRL
+                  in continuous spaces which is polynomial in the episode
+                  length to the best of our knowledge. With the assumption
+                  that reward and transition functions can be modeled by
+                  Bayesian linear regression, we develop a regret bound of
+                  $\tilde\{O\}(H^\{3/2\}d\sqrt\{T\})$, where $H$ is the
+                  episode length, $d$ is the dimension of the state-action
+                  space, and $T$ indicates the total time steps. This result
+                  matches the best-known regret bound of non-PSRL methods in
+                  linear MDPs. Our bound can be extended to nonlinear cases as
+                  well with feature embedding: using linear kernels on the
+                  feature representation $\phi$, the regret bound becomes
+                  $\tilde\{O\}(H^\{3/2\}d_\{\phi\}\sqrt\{T\})$, where $d_\phi$
+                  is the dimension of the representation space. Moreover, we
+                  present MPC-PSRL, a model-based posterior sampling algorithm
+                  with model predictive control for action selection. To
+                  capture the uncertainty in models, we use Bayesian linear
+                  regression on the penultimate layer (the feature
+                  representation layer $\phi$) of neural networks. Empirical
+                  results show that our algorithm achieves the
+                  state-of-the-art sample efficiency in benchmark continuous
+                  control tasks compared to prior model-based algorithms, and
+                  matches the asymptotic performance of model-free algorithms.},
+  month        = nov,
+  year         = 2020,
+  journal      = {arXiv},
+  primaryclass = {cs.LG},
+  eprint       = {2012.09613},
+  doi          = {https://doi.org/10.48550/arXiv.2012.09613}
+}
+
+@article{SLAC,
+  title        = {Stochastic Latent Actor-Critic: Deep Reinforcement Learning with a Latent Variable Model},
+  author       = {Lee, Alex X and Nagabandi, Anusha and Abbeel, Pieter and Levine, Sergey},
+  abstract     = {Deep reinforcement learning (RL) algorithms can use
+                  high-capacity deep networks to learn directly from image
+                  observations. However, these high-dimensional observation
+                  spaces present a number of challenges in practice, since the
+                  policy must now solve two problems: representation learning
+                  and task learning. In this work, we tackle these two
+                  problems separately, by explicitly learning latent
+                  representations that can accelerate reinforcement learning
+                  from images. We propose the stochastic latent actor-critic
+                  (SLAC) algorithm: a sample-efficient and high-performing RL
+                  algorithm for learning policies for complex continuous
+                  control tasks directly from high-dimensional image inputs.
+                  SLAC provides a novel and principled approach for unifying
+                  stochastic sequential models and RL into a single method, by
+                  learning a compact latent representation and then performing
+                  RL in the model's learned latent space. Our experimental
+                  evaluation demonstrates that our method outperforms both
+                  model-free and model-based alternatives in terms of final
+                  performance and sample efficiency, on a range of difficult
+                  image-based control tasks. Our code and videos of our
+                  results are available at our website.},
+  month        = jul,
+  year         = 2019,
+  journal      = {arXiv},
+  primaryclass = {cs.LG},
+  eprint       = {1907.00953},
+  doi          = {https://doi.org/10.48550/arXiv.1907.00953}
+}
+
+@article{SVG,
+  title        = {On the model-based stochastic value gradient for continuous reinforcement learning},
+  author       = {Amos, Brandon and Stanton, Samuel and Yarats, Denis and Wilson, 
+                  Andrew Gordon},
+  abstract     = {For over a decade, model-based reinforcement learning has
+                  been seen as a way to leverage control-based domain
+                  knowledge to improve the sample-efficiency of reinforcement
+                  learning agents. While model-based agents are conceptually
+                  appealing, their policies tend to lag behind those of
+                  model-free agents in terms of final reward, especially in
+                  non-trivial environments. In response, researchers have
+                  proposed model-based agents with increasingly complex
+                  components, from ensembles of probabilistic dynamics models,
+                  to heuristics for mitigating model error. In a reversal of
+                  this trend, we show that simple model-based agents can be
+                  derived from existing ideas that not only match, but
+                  outperform state-of-the-art model-free agents in terms of
+                  both sample-efficiency and final reward. We find that a
+                  model-free soft value estimate for policy evaluation and a
+                  model-based stochastic value gradient for policy improvement
+                  is an effective combination, achieving state-of-the-art
+                  results on a high-dimensional humanoid control task, which
+                  most model-based agents are unable to solve. Our findings
+                  suggest that model-based policy evaluation deserves closer
+                  attention.},
+  month        = aug,
+  year         = 2020,
+  journal      = {arXiv},
+  primaryclass = {cs.LG},
+  eprint       = {2008.12775},
+  doi          = {https://doi.org/10.48550/arXiv.2008.12775}
+}
+
+@article{ModelBasedImplicitDifferentiation,
+  title        = {Control-Oriented Model-Based Reinforcement Learning with Implicit Differentiation},
+  author       = {Nikishin, Evgenii and Abachi, Romina and Agarwal, Rishabh
+                  and Bacon, Pierre-Luc},
+  abstract     = {The shortcomings of maximum likelihood estimation in the
+                  context of model-based reinforcement learning have been
+                  highlighted by an increasing number of papers. When the
+                  model class is misspecified or has a limited
+                  representational capacity, model parameters with high
+                  likelihood might not necessarily result in high performance
+                  of the agent on a downstream control task. To alleviate this
+                  problem, we propose an end-to-end approach for model
+                  learning which directly optimizes the expected returns using
+                  implicit differentiation. We treat a value function that
+                  satisfies the Bellman optimality operator induced by the
+                  model as an implicit function of model parameters and show
+                  how to differentiate the function. We provide theoretical
+                  and empirical evidence highlighting the benefits of our
+                  approach in the model misspecification regime compared to
+                  likelihood-based methods.},
+  month        = jun,
+  year         = 2021,
+  journal      = {arXiv},
+  primaryclass = {cs.LG},
+  eprint       = {2106.03273},
+  doi          = {https://doi.org/10.48550/arXiv.2106.03273}
+}
+
+@article{REDQ,
+  title        = {Randomized Ensembled Double Q-Learning: Learning Fast Without a Model},
+  author       = {Chen, Xinyue and Wang, Che and Zhou, Zijian and Ross, Keith},
+  abstract     = {Using a high Update-To-Data (UTD) ratio, model-based methods
+                  have recently achieved much higher sample efficiency than
+                  previous model-free methods for continuous-action DRL
+                  benchmarks. In this paper, we introduce a simple model-free
+                  algorithm, Randomized Ensembled Double Q-Learning (REDQ),
+                  and show that its performance is just as good as, if not
+                  better than, a state-of-the-art model-based algorithm for
+                  the MuJoCo benchmark. Moreover, REDQ can achieve this
+                  performance using fewer parameters than the model-based
+                  method, and with less wall-clock run time. REDQ has three
+                  carefully integrated ingredients which allow it to achieve
+                  its high performance: (i) a UTD ratio >> 1; (ii) an ensemble
+                  of Q functions; (iii) in-target minimization across a random
+                  subset of Q functions from the ensemble. Through carefully
+                  designed experiments, we provide a detailed analysis of REDQ
+                  and related model-free algorithms. To our knowledge, REDQ is
+                  the first successful model-free DRL algorithm for
+                  continuous-action spaces using a UTD ratio >> 1.},
+  month        = jan,
+  year         = 2021,
+  journal      = {arXiv},
+  primaryclass = {cs.LG},
+  eprint       = {2101.05982},
+  doi          = {https://doi.org/10.48550/arXiv.2101.05982}
+}
+
+@article{MBPO,
+  title        = {When to Trust Your Model: Model-Based Policy Optimization},
+  author       = {Janner, Michael and Fu, Justin and Zhang, Marvin and Levine,
+                  Sergey},
+  abstract     = {Designing effective model-based reinforcement learning
+                  algorithms is difficult because the ease of data generation
+                  must be weighed against the bias of model-generated data. In
+                  this paper, we study the role of model usage in policy
+                  optimization both theoretically and empirically. We first
+                  formulate and analyze a model-based reinforcement learning
+                  algorithm with a guarantee of monotonic improvement at each
+                  step. In practice, this analysis is overly pessimistic and
+                  suggests that real off-policy data is always preferable to
+                  model-generated on-policy data, but we show that an
+                  empirical estimate of model generalization can be
+                  incorporated into such analysis to justify model usage.
+                  Motivated by this analysis, we then demonstrate that a
+                  simple procedure of using short model-generated rollouts
+                  branched from real data has the benefits of more complicated
+                  model-based algorithms without the usual pitfalls. In
+                  particular, this approach surpasses the sample efficiency of
+                  prior model-based methods, matches the asymptotic
+                  performance of the best model-free algorithms, and scales to
+                  horizons that cause other model-based methods to fail
+                  entirely.},
+  month        = jun,
+  year         = 2019,
+  journal      = {arXiv},
+  primaryclass = {cs.LG},
+  eprint       = {1906.08253},
+  doi          = {https://doi.org/10.48550/arXiv.1906.08253}
+}
+
+@article{SAC,
+  title        = {Soft Actor-Critic: Off-Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor},
+  author       = {Haarnoja, Tuomas and Zhou, Aurick and Abbeel, Pieter and Levine, Sergey},
+  abstract     = {Model-free deep reinforcement learning (RL) algorithms have
+                  been demonstrated on a range of challenging decision making
+                  and control tasks. However, these methods typically suffer
+                  from two major challenges: very high sample complexity and
+                  brittle convergence properties, which necessitate meticulous
+                  hyperparameter tuning. Both of these challenges severely
+                  limit the applicability of such methods to complex,
+                  real-world domains. In this paper, we propose soft
+                  actor-critic, an off-policy actor-critic deep RL algorithm
+                  based on the maximum entropy reinforcement learning
+                  framework. In this framework, the actor aims to maximize
+                  expected reward while also maximizing entropy. That is, to
+                  succeed at the task while acting as randomly as possible.
+                  Prior deep RL methods based on this framework have been
+                  formulated as Q-learning methods. By combining off-policy
+                  updates with a stable stochastic actor-critic formulation,
+                  our method achieves state-of-the-art performance on a range
+                  of continuous control benchmark tasks, outperforming prior
+                  on-policy and off-policy methods. Furthermore, we
+                  demonstrate that, in contrast to other off-policy
+                  algorithms, our approach is very stable, achieving very
+                  similar performance across different random seeds.},
+  month        = jan,
+  year         = 2018,
+  journal      = {arXiv},
+  primaryclass = {cs.LG},
+  eprint       = {1801.01290},
+  doi          = {https://doi.org/10.48550/arXiv.1801.01290}
+}
+
+@article{DDPG,
+  title        = {Continuous control with deep reinforcement learning},
+  author       = {Lillicrap, Timothy P and Hunt, Jonathan J and Pritzel,
+                  Alexander and Heess, Nicolas and Erez, Tom and Tassa, Yuval
+                  and Silver, David and Wierstra, Daan},
+  abstract     = {We adapt the ideas underlying the success of Deep Q-Learning
+                  to the continuous action domain. We present an actor-critic,
+                  model-free algorithm based on the deterministic policy
+                  gradient that can operate over continuous action spaces.
+                  Using the same learning algorithm, network architecture and
+                  hyper-parameters, our algorithm robustly solves more than 20
+                  simulated physics tasks, including classic problems such as
+                  cartpole swing-up, dexterous manipulation, legged locomotion
+                  and car driving. Our algorithm is able to find policies
+                  whose performance is competitive with those found by a
+                  planning algorithm with full access to the dynamics of the
+                  domain and its derivatives. We further demonstrate that for
+                  many of the tasks the algorithm can learn policies
+                  end-to-end: directly from raw pixel inputs.},
+  month        = sep,
+  year         = 2015,
+  journal      = {arXiv},
+  primaryclass = {cs.LG},
+  eprint       = {1509.02971},
+  doi          = {https://doi.org/10.48550/arXiv.1509.02971}
+}
+
+@article{DRQv2,
+  title        = {Mastering Visual Continuous Control: Improved Data-Augmented Reinforcement Learning},
+  author       = {Yarats, Denis and Fergus, Rob and Lazaric, Alessandro and Pinto, Lerrel},
+  abstract     = {We present DrQ-v2, a model-free reinforcement learning (RL)
+                  algorithm for visual continuous control. DrQ-v2 builds on
+                  DrQ, an off-policy actor-critic approach that uses data
+                  augmentation to learn directly from pixels. We introduce
+                  several improvements that yield state-of-the-art results on
+                  the DeepMind Control Suite. Notably, DrQ-v2 is able to solve
+                  complex humanoid locomotion tasks directly from pixel
+                  observations, previously unattained by model-free RL. DrQ-v2
+                  is conceptually simple, easy to implement, and provides
+                  significantly better computational footprint compared to
+                  prior work, with the majority of tasks taking just 8 hours
+                  to train on a single GPU. Finally, we publicly release
+                  DrQ-v2's implementation to provide RL practitioners with a
+                  strong and computationally efficient baseline.},
+  month        = jul,
+  year         = 2021,
+  journal      = {arXiv},
+  primaryclass = {cs.AI},
+  eprint       = {2107.09645},
+  doi          = {https://doi.org/10.48550/arXiv.2107.09645}
+}
+
+@article{ACT,
+  title   = {Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware},
+  url     = {https://tonyzhaozh.github.io/aloha/},
+  author  = {Zhao, Tony and Kumar, Vikash and Levine, Sergey and Finn, Chelsea},
+  note    = {Accessed: 2023-4-12},
+  month   = mar,
+  year    = 2023,
+  journal = {GitHub}
+}
+
+@article{RNNDynamics,
+  title        = {Interpretable statistical representations of neural population dynamics and geometry},
+  author       = {Gosztolai, Adam and Peach, Robert L and Arnaudon, 
+                  Alexis and Barahona, Mauricio and Vandergheynst, Pierre},
+  abstract     = {The dynamics of neuron populations during diverse tasks
+                  often evolve on low-dimensional manifolds. However, it
+                  remains challenging to discern the contributions of geometry
+                  and dynamics for encoding relevant behavioural variables.
+                  Here, we introduce an unsupervised geometric deep learning
+                  framework for representing non-linear dynamical systems
+                  based on statistical distributions of local phase portrait
+                  features. Our method provides robust geometry-aware or
+                  geometry-agnostic representations for the unbiased
+                  comparison of dynamics based on measured trajectories. We
+                  demonstrate that our statistical representation can
+                  generalise across neural network instances to discriminate
+                  computational mechanisms, obtain interpretable embeddings of
+                  neural dynamics in a primate reaching task with geometric
+                  correspondence to hand kinematics, and develop a decoding
+                  algorithm with state-of-the-art accuracy. Our results
+                  highlight the importance of using the intrinsic manifold
+                  structure over temporal information to develop better
+                  decoding algorithms and assimilate data across experiments.},
+  month        = apr,
+  year         = 2023,
+  copyright    = {http://creativecommons.org/licenses/by/4.0/},
+  journal      = {arXiv},
+  primaryclass = {cs.LG},
+  eprint       = {2304.03376},
+  doi          = {https://doi.org/10.48550/arXiv.2304.03376}
+}
+
+@article{OFCTodorov,
+  title    = {Optimality principles in sensorimotor control},
+  author   = {Todorov, Emanuel},
+  abstract = {The sensorimotor system is a product of evolution, development,
+              learning and adaptation-which work on different time scales to
+              improve behavioral performance. Consequently, many theories of
+              motor function are based on 'optimal performance': they quantify
+              task goals as cost functions, and apply the sophisticated tools
+              of optimal control theory to obtain detailed behavioral
+              predictions. The resulting models, although not without
+              limitations, have explained more empirical phenomena than any
+              other class. Traditional emphasis has been on optimizing desired
+              movement trajectories while ignoring sensory feedback. Recent
+              work has redefined optimality in terms of feedback control laws,
+              and focused on the mechanisms that generate behavior online. This
+              approach has allowed researchers to fit previously unrelated
+              concepts and observations into what may become a unified
+              theoretical framework for interpreting motor function. At the
+              heart of the framework is the relationship between high-level
+              goals, and the real-time sensorimotor control strategies most
+              suitable for accomplishing those goals.},
+  journal  = {Nat. Neurosci.},
+  volume   = 7,
+  number   = 9,
+  pages    = {907--915},
+  month    = sep,
+  year     = 2004,
+  language = {en}
+}
+
+@article{OFCScott,
+  title    = {Optimal feedback control and the neural basis of volitional motor control},
+  author   = {Scott, Stephen H},
+  journal  = {Nat. Rev. Neurosci.},
+  volume   = 5,
+  number   = 7,
+  pages    = {532--546},
+  month    = jul,
+  year     = 2004,
+  language = {en}
+}
+
+@article{PlaNet,
+  title        = {Learning Latent Dynamics for Planning from Pixels},
+  author       = {Hafner, Danijar and Lillicrap, Timothy and Fischer, Ian and Villegas, Ruben and Ha, David and Lee, 
+                  Honglak and Davidson, James},
+  abstract     = {Planning has been very successful for control tasks with
+                  known environment dynamics. To leverage planning in unknown
+                  environments, the agent needs to learn the dynamics from
+                  interactions with the world. However, learning dynamics
+                  models that are accurate enough for planning has been a
+                  long-standing challenge, especially in image-based domains.
+                  We propose the Deep Planning Network (PlaNet), a purely
+                  model-based agent that learns the environment dynamics from
+                  images and chooses actions through fast online planning in
+                  latent space. To achieve high performance, the dynamics
+                  model must accurately predict the rewards ahead for multiple
+                  time steps. We approach this using a latent dynamics model
+                  with both deterministic and stochastic transition
+                  components. Moreover, we propose a multi-step variational
+                  inference objective that we name latent overshooting. Using
+                  only pixel observations, our agent solves continuous control
+                  tasks with contact dynamics, partial observability, and
+                  sparse rewards, which exceed the difficulty of tasks that
+                  were previously solved by planning with learned models.
+                  PlaNet uses substantially fewer episodes and reaches final
+                  performance close to and sometimes higher than strong
+                  model-free algorithms.},
+  month        = nov,
+  year         = 2018,
+  journal      = {arXiv},
+  primaryclass = {cs.LG},
+  eprint       = {1811.04551},
+  doi          = {https://doi.org/10.48550/arXiv.1811.04551}
+}
+
+@article{DayDreamer,
+  title        = {DayDreamer: World Models for Physical Robot Learning},
+  author       = {Wu, Philipp and Escontrela, Alejandro and Hafner, Danijar and Goldberg, Ken and Abbeel, Pieter},
+  abstract     = {To solve tasks in complex environments, robots need to learn
+                  from experience. Deep reinforcement learning is a common
+                  approach to robot learning but requires a large amount of
+                  trial and error to learn, limiting its deployment in the
+                  physical world. As a consequence, many advances in robot
+                  learning rely on simulators. On the other hand, learning
+                  inside of simulators fails to capture the complexity of the
+                  real world, is prone to simulator inaccuracies, and the
+                  resulting behaviors do not adapt to changes in the world.
+                  The Dreamer algorithm has recently shown great promise for
+                  learning from small amounts of interaction by planning
+                  within a learned world model, outperforming pure
+                  reinforcement learning in video games. Learning a world
+                  model to predict the outcomes of potential actions enables
+                  planning in imagination, reducing the amount of trial and
+                  error needed in the real environment. However, it is unknown
+                  whether Dreamer can facilitate faster learning on physical
+                  robots. In this paper, we apply Dreamer to 4 robots to learn
+                  online and directly in the real world, without simulators.
+                  Dreamer trains a quadruped robot to roll off its back, stand
+                  up, and walk from scratch and without resets in only 1 hour.
+                  We then push the robot and find that Dreamer adapts within
+                  10 minutes to withstand perturbations or quickly roll over
+                  and stand back up. On two different robotic arms, Dreamer
+                  learns to pick and place multiple objects directly from
+                  camera images and sparse rewards, approaching human
+                  performance. On a wheeled robot, Dreamer learns to navigate
+                  to a goal position purely from camera images, automatically
+                  resolving ambiguity about the robot orientation. Using the
+                  same hyperparameters across all experiments, we find that
+                  Dreamer is capable of online learning in the real world,
+                  establishing a strong baseline. We release our
+                  infrastructure for future applications of world models to
+                  robot learning.},
+  month        = jun,
+  year         = 2022,
+  journal      = {arXiv},
+  primaryclass = {cs.RO},
+  eprint       = {2206.14176},
+  doi          = {https://doi.org/10.48550/arXiv.2206.14176}
+}
+
+@article{Dreamer,
+  title        = {Dream to Control: Learning Behaviors by Latent Imagination},
+  author       = {Hafner, Danijar and Lillicrap, Timothy and Ba, Jimmy and Norouzi, Mohammad},
+  abstract     = {Learned world models summarize an agent's experience to
+                  facilitate learning complex behaviors. While learning world
+                  models from high-dimensional sensory inputs is becoming
+                  feasible through deep learning, there are many potential
+                  ways for deriving behaviors from them. We present Dreamer, a
+                  reinforcement learning agent that solves long-horizon tasks
+                  from images purely by latent imagination. We efficiently
+                  learn behaviors by propagating analytic gradients of learned
+                  state values back through trajectories imagined in the
+                  compact state space of a learned world model. On 20
+                  challenging visual control tasks, Dreamer exceeds existing
+                  approaches in data-efficiency, computation time, and final
+                  performance.},
+  month        = dec,
+  year         = 2019,
+  journal      = {arXiv},
+  primaryclass = {cs.LG},
+  eprint       = {1912.01603},
+  doi          = {https://doi.org/10.48550/arXiv.1912.01603}
+}
+
+@article{ALM,
+  title        = {Simplifying Model-based RL: Learning Representations, Latent-space Models, and Policies with One Objective},
+  author       = {Ghugare, Raj and Bharadhwaj, Homanga and Eysenbach, Benjamin and Levine, 
+                  Sergey and Salakhutdinov, Ruslan},
+  abstract     = {While reinforcement learning (RL) methods that learn an
+                  internal model of the environment have the potential to be
+                  more sample efficient than their model-free counterparts,
+                  learning to model raw observations from high dimensional
+                  sensors can be challenging. Prior work has addressed this
+                  challenge by learning low-dimensional representation of
+                  observations through auxiliary objectives, such as
+                  reconstruction or value prediction. However, the alignment
+                  between these auxiliary objectives and the RL objective is
+                  often unclear. In this work, we propose a single objective
+                  which jointly optimizes a latent-space model and policy to
+                  achieve high returns while remaining self-consistent. This
+                  objective is a lower bound on expected returns. Unlike prior
+                  bounds for model-based RL on policy exploration or model
+                  guarantees, our bound is directly on the overall RL
+                  objective. We demonstrate that the resulting algorithm
+                  matches or improves the sample-efficiency of the best prior
+                  model-based and model-free RL methods. While sample
+                  efficient methods typically are computationally demanding,
+                  our method attains the performance of SAC in about 50\% less
+                  wall-clock time.},
+  month        = sep,
+  year         = 2022,
+  journal      = {arXiv},
+  primaryclass = {cs.LG},
+  eprint       = {2209.08466},
+  doi          = {https://doi.org/10.48550/arXiv.2209.08466}
+}
+
+% The entry below contains non-ASCII chars that could not be converted
+% to a LaTeX equivalent.
+@article{CompetingPlans,
+  title    = {{Single-Trial} Dynamics of Competing Reach Plans in the Human Motor Periphery},
+  author   = {Selen, Luc P J and Corneil, Brian D and Medendorp, W Pieter},
+  abstract = {Contemporary motor control theories propose competition between
+              multiple motor plans before the winning command is executed.
+              While most competitions are completed before movement onset,
+              movements are often initiated before the competition has been
+              resolved. An example of this is saccadic averaging, wherein the
+              eyes land at an intermediate location between two visual targets.
+              Behavioral and neurophysiological signatures of competing motor
+              commands have also been reported for reaching movements, but
+              debate remains about whether such signatures attest to an
+              unresolved competition, arise from averaging across many trials,
+              or reflect a strategy to optimize behavior given task
+              constraints. Here, we recorded EMG activity from an upper limb
+              muscle (m. pectoralis) while 12 (8 female) participants performed
+              an immediate response reach task, freely choosing between one of
+              two identical and suddenly presented visual targets. On each
+              trial, muscle recruitment showed two distinct phases of
+              directionally tuned activity. In the first wave, time-locked ∼100
+              ms of target presentation, muscle activity was clearly influenced
+              by the nonchosen target, reflecting a competition between reach
+              commands that was biased in favor of the ultimately chosen
+              target. This resulted in an initial movement intermediate between
+              the two targets. In contrast, the second wave, time-locked to
+              voluntary reach onset, was not biased toward the nonchosen
+              target, showing that the competition between targets was
+              resolved. Instead, this wave of activity compensated for the
+              averaging induced by the first wave. Thus, single-trial analysis
+              reveals an evolution in how the nonchosen target differentially
+              influences the first and second wave of muscle
+              activity.SIGNIFICANCE STATEMENT Contemporary theories of motor
+              control suggest that multiple motor plans compete for selection
+              before the winning command is executed. Evidence for this is
+              found in intermediate reach movements toward two potential target
+              locations, but recent findings have challenged this notion by
+              arguing that intermediate reaching movements reflect an optimal
+              response strategy. By examining upper limb muscle recruitment
+              during a free-choice reach task, we show early recruitment of a
+              suboptimal averaged motor command to the two targets that
+              subsequently transitions to a single motor command that
+              compensates for the initially averaged motor command. Recording
+              limb muscle activity permits single-trial resolution of the
+              dynamic influence of the nonchosen target through time.},
+  journal  = {J. Neurosci.},
+  volume   = 43,
+  number   = 15,
+  pages    = {2782--2793},
+  month    = apr,
+  year     = 2023,
+  keywords = {EMG; decision making; motor planning; reaching; visually guided},
+  language = {en}
+}
+
+@article{BiomechRL,
+  title    = {Reinforcement learning control of a biomechanical model of the upper extremity},
+  author   = {Fischer, Florian and Bachinski, Miroslav and Klar, Markus and Fleig, Arthur and M{\"u}ller, J{\"o}rg},
+  abstract = {Among the infinite number of possible movements that can be
+              produced, humans are commonly assumed to choose those that
+              optimize criteria such as minimizing movement time, subject to
+              certain movement constraints like signal-dependent and constant
+              motor noise. While so far these assumptions have only been
+              evaluated for simplified point-mass or planar models, we address
+              the question of whether they can predict reaching movements in a
+              full skeletal model of the human upper extremity. We learn a
+              control policy using a motor babbling approach as implemented in
+              reinforcement learning, using aimed movements of the tip of the
+              right index finger towards randomly placed 3D targets of varying
+              size. We use a state-of-the-art biomechanical model, which
+              includes seven actuated degrees of freedom. To deal with the
+              curse of dimensionality, we use a simplified second-order muscle
+              model, acting at each degree of freedom instead of individual
+              muscles. The results confirm that the assumptions of
+              signal-dependent and constant motor noise, together with the
+              objective of movement time minimization, are sufficient for a
+              state-of-the-art skeletal model of the human upper extremity to
+              reproduce complex phenomena of human movement, in particular
+              Fitts' Law and the [Formula: see text] Power Law. This result
+              supports the notion that control of the complex human
+              biomechanical system can plausibly be determined by a set of
+              simple assumptions and can easily be learned.},
+  journal  = {Sci. Rep.},
+  volume   = 11,
+  number   = 1,
+  pages    = {14445},
+  month    = jul,
+  year     = 2021,
+  language = {en}
+}
+
+@article{RNNPrep,
+  title    = {When and why does motor preparation arise in recurrent neural network models of motor control?},
+  author   = {Schimel, Marine and Kao, Ta-Chu and Hennequin, Guillaume},
+  abstract = {During delayed ballistic reaches, motor areas consistently
+              display movement-specific activity patterns prior to movement
+              onset. It is unclear why these patterns arise: while they have
+              been proposed to seed an initial neural state from which the
+              movement unfolds, recent experiments have uncovered the presence
+              and necessity of ongoing inputs during movement, which may lessen
+              the need for careful initialization. Here, we modelled the motor
+              cortex as an input-driven dynamical system, and we asked what the
+              optimal way to control this system to perform fast delayed
+              reaches is. We find that delay-period inputs consistently arise
+              in an optimally controlled model of M1. By studying a variety of
+              network architectures, we could dissect and predict the
+              situations in which it is beneficial for a network to prepare.
+              Finally, we show that optimal input-driven control of neural
+              dynamics gives rise to multiple phases of preparation during
+              reach sequences, providing a novel explanation for experimentally
+              observed features of monkey M1 activity in double reaching.
+              \#\#\# Competing Interest Statement The authors have declared no
+              competing interest.},
+  journal  = {bioRxiv},
+  pages    = {2023.04.03.535429},
+  month    = apr,
+  year     = 2023,
+  language = {en},
+  doi      = {10.1101/2023.04.03.535429}
+}
+
+@inproceedings{RNN-SAC,
+  title     = {Recurrent neural networks controlling musculoskeletal models predict motor cortex activity during novel limb movements},
+  booktitle = {{IEEE} {Engineering in Medicine \& Biology Society} ({EMBC})},
+  author    = {Almani, Muhammad Noman and Saxena, Shreya},
+  abstract  = {Goal-driven networks trained to perform a task analogous to that
+               performed by biological neural populations are being
+               increasingly utilized as insightful computational models of
+               motor control. The resulting dynamics of the trained networks
+               are then analyzed to uncover the neural strategies employed by
+               the motor cortex to produce movements. However, these networks
+               do not take into account the role of sensory feedback in
+               producing movement, nor do they consider the complex biophysical
+               underpinnings of the underlying musculoskeletal system.
+               Moreover, these models can not be used in context of predictive
+               neuromechanical simulations for hypothesis generation and
+               prediction of neural strategies during novel movements. In this
+               research, we adapt state-of-the-art deep reinforcement learning
+               (DRL) algorithms to train a controller to drive a developed
+               anatomically accurate monkey arm model to track experimentally
+               recorded kinematics. We validate that the trained controller
+               mimics biologically observed neural strategies to produce
+               movement. The trained controller generalizes well to unobserved
+               conditions as well as to perturbation analyses. The recorded
+               firing rates of motor cortex neurons can be predicted from the
+               controller activity with high accuracy even on unseen
+               conditions. Finally, we validate that the trained controller
+               outperforms existing goal-driven and representational models of
+               motor cortex in single neuron decoding accuracy, thus showing
+               the utility of the complex underpinnings of anatomically
+               accurate models in shaping motor cortex neural activity during
+               limb movements. The learned controller can be used for
+               hypothesis generation and prediction of neural strategies during
+               novel movements and unobserved conditions.},
+  pages     = {3350--3356},
+  month     = jul,
+  year      = 2022,
+  keywords  = {Adaptation models;Musculoskeletal system;Motor
+               drives;Firing;Biological system modeling;Neurons;Neural activity}
+}
+
+@article{InternalModels,
+  title    = {Internal Models in Biological Control},
+  author   = {McNamee, Daniel and Wolpert, Daniel M},
+  abstract = {Rationality principles such as optimal feedback control and
+              Bayesian inference underpin a probabilistic framework that has
+              accounted for a range of empirical phenomena in biological
+              sensorimotor control. To facilitate the optimization of flexible
+              and robust behaviors consistent with these theories, the ability
+              to construct internal models of the motor system and
+              environmental dynamics can be crucial. In the context of this
+              theoretic formalism, we review the computational roles played by
+              such internal models and the neural and behavioral evidence for
+              their implementation in the brain.},
+  journal  = {Annu Rev Control Robot Auton Syst},
+  volume   = 2,
+  pages    = {339--364},
+  month    = may,
+  year     = 2019,
+  language = {en}
+}

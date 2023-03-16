@@ -127,3 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# typst pdfs
+*.pdf
+*.tmp*
