@@ -35,14 +35,14 @@ unexpected environmental conditions eventhough reflexive reactions to perturbati
 #cite("Shadmehr1994", "Conditt1997", "CrevecoeurRobustControl"). This shows the need for a more general framework and 
 formulation that models the organization of control -- not as a single model-based policy output but one that also allows 
 for policy modulation, adaptation (e.g. continual learning), and online multi-level planning and control. Added to that, the 
-framework should be grounded in stochastic control, as this is a key feature of naturalistic movements making them 
-inherently tuned and robust while also acting as a learning mechanism #cite("SigDepNoise", "VarLearning").
+framework should be grounded in stochastic control, as this is a key feature of naturalistic movements which also makes them 
+inherently tunable and robust while also enabling a learning mechanism #cite("SigDepNoise", "VarLearning").
 
 To this end, most neuroscientifically-motivated modelling attempts have included an RNN-based controller, which favorably 
 lends itself to neuron-population level analyses of activity patterns which are similar to what is done on experimental
 recordings from the motor-related cortical areas. MotorNet by @MotorNet #label("motornet") is one such realistic arm 
 model coupled with a controller that is trained in delayed continuous feedback and continuous action spaces, following 
-the optimal feedback control (OFC) framework laid out by #cite("OFCTodorov", "OFCScott"). This is a promising direction, 
+the optimal feedback control (OFC) framework #cite("OFCTodorov", "OFCScott"). This is a promising direction, 
 especially when studying neural dynamics in cortical control, however, we are interested in the organizational aspect of 
 motor control in a more _interpretable_ fashion, for which the model-based RL framework is more suitable. In a study by 
 @RNN-SAC, performant control is elegantly achieved with an RNN-based actor in soft actor-critic (SAC) from @SAC so that 
@@ -81,8 +81,8 @@ instead of using the 6-muscle default.
     rows: (3cm, 3cm),
     column-gutter: 0em,
     row-gutter: 2em,
-    figure(image("./assets/momentarms.svg", width: 100%), caption: [Moment arms]),
-    figure(image("./assets/musclelengths.svg", width: 100%), caption: [Muscle lengths])
+    figure(image("./assets/momentarms.png", width: 100%), caption: [Moment arms]),
+    figure(image("./assets/musclelengths.png", width: 100%), caption: [Muscle lengths])
   )
 )
 
@@ -110,7 +110,7 @@ noiseless as a minor assumption. The noise model is not signal-dependent, which 
 important modelling consideration in future work. The policy rollout lasts for 1 second of simulated time and signifies the 
 maximum time to reach a target, and the action commands and are updated every 20 ms during the rollout.
 
-Roughly following the loss definitions in @MotorNet, we calculate the reward signal as below.
+We roughly follow the loss definitions in @MotorNet to calculate the reward signal, given below.
 
 $ 
   L_1 := "mean"_("#joints") (|"goal joint states" - "current joint states"|) \
@@ -184,20 +184,20 @@ Adapting these latent-space ideas for the proposed idea in @conceptual_policy is
 // @ModelBasedImplicitDifferentiation. Nishkin et al. propose a method to address this issue by proposing an end-to-end approach for model learning which directly optimizes the expected returns using implicit differentiation.
 
 == Exploratory Formulation <exploratory_formulation>
-Based on the concept of optimal feedback control (OFC) in neuroscience #cite("OFCTodorov", "OFCScott"), we know that control
-evolves in time and is online in nature, meaning that although we can produce entirely feedforward control (inverse model) 
-we always use this ability with the short-period feedback prediction (forward model) to produce the movement. This is 
-supplemented by the longer-term and higher-level planning that is also online and adaptive, albeit at a slower rate. This is
-is also a biological hierarchy and has recently also been demonstrated in RNNs as an underlying and necessary mechanism 
-#cite("RNNDynamics", "RNNPrep") for optimal control. Noteably, the forward state prediction can happen at variable 
-timescales, which makes sense with complex dynamics and changing precision requirements -- which may manifest as chunking of 
-longer sequences of actions over a similar rollout-timescale, as suggested by @ACT. This hierarchical control 
-structure will require to operate in latent space for seamless composition whose advantages have recently been demonstrated 
-in a few model-based RL approaches #cite("DRQv2", "Dreamer", "ALM"). However, variable timescales will
-require a flexible usage of latents which may introduce complexity, but it can also allow for a more natural emergence of 
-control strategies depending on the task demands as well as any environmental perturbations. Summarized in 
-@conceptual_policy, this idea is consistent from many perspectives in sensorimotor neuroscience, but will need some 
-work in formulating further.
+Based on the concept of optimal feedback control (OFC) in neuroscience #cite("OFCTodorov", "OFCScott"), it is proposed that 
+control evolves in time and is online in nature and is based in feedback space, meaning that although we can produce 
+entirely feedforward control (inverse model) we always use this ability with the short-period feedback prediction (forward 
+model) to produce the movement. This is supplemented by the longer-term and higher-level planning that is also online and 
+adaptive, albeit at a slower rate. This is also a biological hierarchy and has recently also been demonstrated in RNNs as an 
+underlying and necessary mechanism #cite("RNNDynamics", "RNNPrep") for optimal control. Noteably, the forward state 
+prediction can happen at variable timescales, which makes sense with complex dynamics and changing precision requirements -- 
+which may manifest as chunking of longer sequences of actions or coarser-but-longer prediction horizon over a similar 
+rollout-timescale, as suggested by @ACT. This hierarchical control structure will require to operate in latent space for 
+seamless composition whose advantages have recently been demonstrated in a few model-based RL approaches #cite("DRQv2", 
+"Dreamer", "ALM"). However, variable timescales will require a flexible usage of latents which may introduce complexity, but 
+it can also allow for a more natural emergence of control strategies depending on the task demands as well as any 
+environmental perturbations. Summarized in @conceptual_policy, this idea is consistent from many perspectives in 
+sensorimotor neuroscience, but will need some work in formulating further.
 
 /*
 Based on the recent innovation novel algorithm Action Chunking with Transformers (ACT) which reduces the effective 
@@ -261,7 +261,7 @@ Such a control policy can then also be applied to robots and control of other li
 // mediate feedback, only that it won't be timestamped...
 
 #align(center)[
-#figure(image("./assets/latent_ofc_policy.png", width: 60%), 
+#figure(image("./assets/latent_ofc_policy.png", width: 55%), 
 caption: [Latent OFC policy]) <conceptual_policy>
 ]
 
@@ -331,9 +331,9 @@ We chose SAC because it is easy to implement and is widely included in performan
 have shown promising results in a variety of domains. For this purpose, we used the #link("https://www.tensorflow.org/
 agents")[TF-Agents] library in TensorFlow and packaged the MotorNet plant inside a custom TensorFlow Environment to make
 it compatible with TF-Agents. This was a logical choice given that MotorNet is also a TensorFlow-based library. While we 
-will be using SAC as our baseline algorithm, we are also considering the approach proposed by @REDQ for future use. They 
-have suggested an ensemble of $Q$-function models combined with in-target minimization as an improved method, which we 
-will consider as a potential optimization, since this forward-engineering insight of using ensemble of actors also 
+will be using SAC as our baseline algorithm, we are also considering the approach proposed in REDQ @REDQ for future use. 
+They have suggested an ensemble of $Q$-function models combined with in-target minimization as an improved method, which we 
+will consider as a potential optimization, since this forward-engineering insight of using ensemble of value networks also 
 matches the concept of competing motor plans in sensorimotor neuroscience @CompetingPlans. SAC being a model-free 
 algorithm, means that it does not require a physical model of the environment. However, it does use a value network which 
 can be seen as a learned abstraction of the environment's dynamics, detached from its physicality, but nonetheless being 
@@ -371,21 +371,23 @@ learning, as demonstrated in PAML @PAML and related works. However, this approac
 the evolving stochastic continuous control framework. Another option is to use a model-based RL algorithms, such as MAAC 
 and SVG #cite("MAAC", "SVG"), both of which will need custom TensorFlow implementation from scratch.
 
-Looking forward, we have identified the ensemble-$Q$ function approach in REDQ to be a potential means to improve the policy 
-network, which could enable ensemble-informed variance in control and possibly the emergence of different strategies during 
-online control. It is worth noting such areas of potential improvement to then integrate into our conceptual algorithm in 
-@conceptual_policy, which has yet to be developed. We also see latent space planning as a promising approach that underpins 
-our problem formulation, as discussed in @exploratory_formulation. Nevertheless, we aim to keep the final model simple, 
-without too many engineering tricks, to ensure it is well-motivated and grounded in neuroscience. Rather than prioritizing 
-the model's time-to-performance, we are interested in its design details, suitability to scientific ideas, overall 
-rationale, and its ability to test various hypotheses about the hierarchies of control systems in the nervous system.
+Looking forward, we have identified the ensemble-$Q$ function approach in REDQ @REDQ to be a potential means to improve the 
+Deep-RL network, which could enable ensemble-informed stochasticity in control commands and possibly also lay a path for the 
+emergence of different control strategies in online control. It is worth noting such areas of potential improvement to then 
+integrate into our conceptual algorithm in @conceptual_policy, which has yet to be developed. We also see latent space 
+planning as a promising approach that underpins our problem formulation, as discussed in @exploratory_formulation. 
+Nevertheless, we aim to keep the final model simple, without too many engineering tricks, to ensure it is well-motivated and 
+grounded in neuroscience. Rather than prioritizing the model's time-to-performance, we are interested in its design details, 
+suitability to scientific ideas, overall rationale, and its ability to test various hypotheses about the hierarchies of 
+control systems in the nervous system.
 
-We aspire to develop a model-based RL algorithm that encompasses all the components in laid out in @conceptual_policy, 
+We aspire to develop a model-based RL algorithm that encompasses all the components laid out in @conceptual_policy, 
 rather than just one, as is the case with other model-based algorithms. Overall, our current approach involves experimental 
-and conceptual exploration of the "core" baseline and our improvements based on its features. It is worth noting again that 
-our goal is not only to achieve high performance levels and quick convergence but also to develop a model-based policy that 
-is interpretable and can provide insights into the underlying control laws. We believe that this combination of performance 
-and interpretability could serve as a valuable oracle or a model of trans-cortical computation for movement control, 
+and conceptual exploration of the "core" baseline framework and devise improvements based on its features. It is worth 
+noting again that our goal is not only to achieve high performance levels and quick convergence but also to develop a 
+model-based policy that is interpretable and can provide insights into the underlying control laws. We believe that this 
+combination of performance and interpretability could serve as a valuable oracle for embedding meaningful representations in 
+RNN-based controllers, and by itself stand as a model of cortical and trans-cortical computation for movement control, 
 including long-latency reflexes and optimal and robust voluntary motion.
 
 #set heading(numbering: none)
